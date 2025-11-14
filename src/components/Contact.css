@@ -1,0 +1,145 @@
+:root {
+  --bg-color: linear-gradient(135deg, #e0d7ff, #d0f0ff);
+}
+
+/* Container styling */
+.contact-section {
+  padding: 60px 20px;
+  background: var(--bg-color);
+  color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Heading */
+.contact-section h1 {
+  font-size: 2.5rem;
+  color: #007bff; /* Blue heading */
+}
+
+.contact-section p.lead {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Form styling - tall and narrow */
+.contact-form {
+  background: #d9b3ff; /* Light purple */
+  border-radius: 12px;
+  padding: 40px 25px;
+  width: 90%;
+  max-width: 400px;  /* narrow */
+  margin: 0 auto;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Input fields */
+.contact-form .form-control {
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  background: #ffffff; /* White input boxes */
+  color: #333; /* Dark text */
+}
+
+.contact-form .form-control::placeholder {
+  color: #888; /* Gray placeholder */
+}
+
+.contact-form .form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+  outline: none;
+}
+
+/* Send Button - small, standard, centered */
+.send-btn {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 8px 18px;
+  border-radius: 20px;
+  width: auto;       
+  display: block;
+  margin: 20px auto 0; /* centered */
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.send-btn:hover {
+  background: #0056b3;
+  transform: translateY(-1px);
+}
+
+/* Social icons */
+.social-icons a {
+  font-size: 2rem;
+  color: black; /* default black */
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Instagram gradient hover */
+.social-icons a.instagram:hover {
+  background: linear-gradient(
+    45deg,
+    #feda75,
+    #fa7e1e,
+    #d62976,
+    #962fbf,
+    #4f5bd5
+  );
+  -webkit-background-clip: text; 
+  -moz-background-clip: text;    
+  background-clip: text;         
+  -webkit-text-fill-color: transparent; 
+  color: transparent;                 
+  transform: scale(1.2);
+}
+
+/* Gmail gradient hover */
+.social-icons a.gmail:hover {
+  background: linear-gradient(
+    45deg,
+    #4285F4, /* Blue */
+    #0F9D58  /* Green */
+  );
+  -webkit-background-clip: text; 
+  -moz-background-clip: text;    
+  background-clip: text;         
+  -webkit-text-fill-color: transparent; 
+  color: transparent;                 
+  transform: scale(1.2);
+}
+
+/* WhatsApp color hover */
+.social-icons a.whatsapp:hover {
+  color: #25d366;
+}
+
+/* LinkedIn color hover */
+.social-icons a.linkedin:hover {
+  color: #0a66c2;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
+.social-icons i {
+  transition: all 0.3s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .contact-form .row > div {
+    margin-bottom: 15px;
+  }
+}

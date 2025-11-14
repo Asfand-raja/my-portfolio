@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ElderCare Mockups</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      background: linear-gradient(135deg, #e0eafc, #cfdef3);
+      color: #333;
+    }
+
+    h1 {
+      margin-top: 50px;
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #4f46e5; /* deep purple */
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .pdf-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      width: 90%;
+      max-width: 1200px;
+      margin: 20px auto 60px auto;
+    }
+
+    .pdf-list a {
+      display: block;
+      text-decoration: none;
+      padding: 20px;
+      border-radius: 20px;
+      border: 2px solid transparent; /* initial border */
+      background: #C0C0C0; /* silver */
+      color: #000; /* black text */
+      font-weight: 600;
+      font-size: 1.1rem;
+      text-align: center;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      transition: all 0.4s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Shimmer overlay */
+    .pdf-list a::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -75%;
+      width: 50%;
+      height: 100%;
+      background: linear-gradient(120deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3));
+      transform: skewX(-25deg);
+      transition: all 0.5s ease;
+    }
+
+    .pdf-list a:hover::before {
+      left: 125%;
+    }
+
+    .pdf-list a:hover {
+      background: linear-gradient(135deg, #d4d4d4, #a9a9a9); /* darker silver */
+      color: #000;
+      transform: scale(1.08);
+      box-shadow: 0 12px 30px rgba(128, 128, 128, 0.6);
+      border-color: #7c3aed; /* purple border on hover */
+    }
+
+    @media (max-width: 600px) {
+      .pdf-list {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 2rem;
+        margin-top: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1>ElderCare Mockups</h1>
+  <div class="pdf-list">
+    <a href="/ElderCare/Caregiver_Matches.pdf" target="_blank">Caregiver Matches</a>
+    <a href="/ElderCare/Caregiver_Registration.pdf" target="_blank">Caregiver Registration</a>
+    <a href="/ElderCare/Customize_Profile_Skills.pdf" target="_blank">Customize Profile & Skills</a>
+    <a href="/ElderCare/Dashboard.pdf" target="_blank">Dashboard</a>
+    <a href="/ElderCare/Match_Details_View.pdf" target="_blank">Match Details View</a>
+    <a href="/ElderCare/Match_Preferences.pdf" target="_blank">Match Preferences</a>
+    <a href="/ElderCare/Settings.pdf" target="_blank">Settings</a>
+    <a href="/ElderCare/Stitch_Design.pdf" target="_blank">Stitch Design</a>
+    <a href="/ElderCare/Volunteer_Match_Results.pdf" target="_blank">Volunteer Match Results</a>
+    <a href="/ElderCare/Volunteer_Registration.pdf" target="_blank">Volunteer Registration</a>
+    <a href="/ElderCare/Role_Selection.pdf" target="_blank">Role Selection</a>
+    <a href="/ElderCare/Match_Confirmation.pdf" target="_blank">Match Confirmation</a>
+    <a href="/ElderCare/Notifications.pdf" target="_blank">Notifications</a>
+  </div>
+</body>
+
+</html>
