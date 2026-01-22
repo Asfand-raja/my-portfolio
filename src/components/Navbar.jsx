@@ -44,15 +44,33 @@ function Navbar() {
                 Resume
               </NavLink>
             </li>
-            <li className="nav-item">
-              <NavLink
-                to="/projects"
-                className={({ isActive }) =>
-                  "nav-link" + (isActive ? " active-link" : "")
-                }
+            <li className="nav-item dropdown">
+              <a
+                className="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
               >
                 Projects
-              </NavLink>
+              </a>
+              <ul className="dropdown-menu dropdown-menu-end">
+                <li>
+                  <NavLink className="dropdown-item" to="/projects/web-dev">
+                    Web Development
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink className="dropdown-item" to="/projects/graphic-design">
+                    Graphic Design
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink className="dropdown-item" to="/projects/ui-design">
+                    UI Design
+                  </NavLink>
+                </li>
+              </ul>
             </li>
             <li className="nav-item">
               <NavLink

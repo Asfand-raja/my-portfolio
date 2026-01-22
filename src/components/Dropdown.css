@@ -1,0 +1,108 @@
+/* Global Dropdown Styling */
+
+/* Dropdown Menu Container */
+.dropdown-menu {
+    border: 1px solid #e2e8f0 !important;
+    /* Slate 200 */
+    border-radius: 8px !important;
+    box-shadow: var(--shadow-md) !important;
+    padding: 8px !important;
+    background: #ffffff !important;
+    min-width: 220px !important;
+    animation: fadeIn 0.3s ease !important;
+    z-index: 1050 !important;
+    backdrop-filter: none !important;
+    /* Remove blur */
+}
+
+/* Ensure proper positioning for Home Page dropdown */
+.intro .dropdown-menu {
+    /* Reset any relative shifts */
+    margin-top: 10px !important;
+    /* Force position */
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    /* Ensure it's not "above" (dropup) */
+    top: 100% !important;
+    bottom: auto !important;
+}
+
+/* For Navbar, default bootstrap positioning is usually fine, but let's check */
+.navbar .dropdown-menu {
+    margin-top: 10px !important;
+    right: 0 !important;
+    left: auto !important;
+    animation-name: fadeInNavbar !important;
+    border-top: 3px solid var(--emerald-accent) !important;
+}
+
+/* Dropdown Items */
+/* Dropdown Items */
+.dropdown-item {
+    border-radius: 6px !important;
+    padding: 10px 16px !important;
+    font-weight: 500 !important;
+    color: #334155 !important;
+    /* Dark slate text for visibility on white bg */
+    transition: all 0.2s ease !important;
+    font-size: 0.95rem;
+}
+
+/* Hover Effects on Items */
+.dropdown-item:hover,
+.dropdown-item:focus {
+    background-color: #f1f5f9 !important;
+    /* Slate 100 */
+    color: var(--emerald-accent) !important;
+    transform: translateX(4px) !important;
+}
+
+/* Active State for Dropdown Items */
+.dropdown-item.active,
+.dropdown-item:active {
+    background-color: var(--emerald-accent) !important;
+    color: #fff !important;
+}
+
+/* Open on Hover Logic (for both Home and Navbar if desired, primarily Home) */
+/* Apply to .dropdown:hover .dropdown-menu only on desktop-like widths if possible, 
+   but for simplicity we apply generally or keep separate if navbar behavior needs difference.
+   Standard Bootstrap navbar needs click on mobile, so be careful. 
+   User asked for "make the drop down of the navbar same too", implying hover. */
+
+@media (min-width: 992px) {
+    .dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0;
+    }
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, 10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+}
+
+/* Navbar specific animation adjust (no center transform) */
+.navbar .dropdown-menu {
+    animation-name: fadeInNavbar !important;
+}
+
+@keyframes fadeInNavbar {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -47,12 +47,12 @@ function Resume() {
       <div className="right-column">
         <h2 className="mb-3">Raja Asfand Arif Khan</h2>
         <h5 className="text-muted mb-4">
-          Frontend Developer | Graphic Designer | Video Editor
+          Web Developer | Graphic Designer | Video Editor
         </h5>
 
         <h4 className="section-title">Profile Summary</h4>
         <p>
-          Creative and versatile Frontend Developer & Graphic Designer with
+          Creative and versatile Web Developer & Graphic Designer with
           hands-on experience in HTML5, CSS, JavaScript, React, TypeScript, and
           Canva. Skilled in crafting engaging visuals and responsive web
           interfaces that blend aesthetics with functionality. Passionate about

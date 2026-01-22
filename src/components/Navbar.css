@@ -1,61 +1,57 @@
-:root {
-  --navbar-gradient: linear-gradient(90deg, #7c3aed, #38bdf8);
-  --card-shadow: rgba(0, 0, 0, 0.2);
-  --highlight-color: #ffd700;
-}
-
 /* Navbar */
 .navbar {
-  background: var(--navbar-gradient);
-  box-shadow: 0 2px 10px var(--card-shadow);
+  background: var(--primary-dark) !important;
+  /* Slate 900 */
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   transition: all 0.4s ease;
+  padding: 1rem 0;
 }
 
 .navbar-brand {
-  color: white !important;
+  color: var(--nav-text) !important;
+  font-weight: 700;
+  letter-spacing: 0.5px;
 }
 
 .navbar small {
-  color: #dcdcdc !important;
+  color: #94a3b8 !important;
+  /* Slate 400 */
 }
 
 /* Navbar Links */
 .nav-link {
-  color: white !important;
+  color: #cbd5e1 !important;
+  /* Slate 300 */
   position: relative;
-  transition: color 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  padding: 8px 16px !important;
+  border-radius: 6px;
 }
 
 .nav-link::after {
-  content: "";
-  position: absolute;
-  width: 0%;
-  height: 2px;
-  left: 0;
-  bottom: -3px;
-  background: linear-gradient(90deg, #a855f7, #7c3aed);
-  transition: width 0.3s ease-in-out;
+  content: none;
+  /* Remove old underline style */
 }
 
 .nav-link:hover {
-  color: #a855f7 !important;
-}
-
-.nav-link:hover::after {
-  width: 100%;
+  color: var(--emerald-accent) !important;
+  background: rgba(255, 255, 255, 0.05);
 }
 
 /* Active link (current page) */
 .nav-link.active-link {
-  color: var(--highlight-color) !important;
+  color: var(--emerald-accent) !important;
   font-weight: 600;
+  background: rgba(16, 185, 129, 0.1);
 }
 
 .nav-link.active-link::after {
-  content: none; /* remove underline effect for active link */
+  content: none;
+  /* remove underline effect for active link */
 }
 
 /* Optional: Make Resume button stand out slightly */
 .nav-link.active-link[href="/resume"] {
-  font-weight: 700; /* slightly bolder if you want */
+  font-weight: 700;
+  /* slightly bolder if you want */
 }

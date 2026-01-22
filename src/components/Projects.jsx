@@ -131,7 +131,7 @@ function Projects() {
         {categories.map((category) => (
           <div key={category} className="mb-5">
             <h3 className="category-heading">{category}</h3>
-            <div className="row justify-content-center">
+            <div className="row">
               {projects
                 .filter((p) => p.category === category)
                 .map((project, index) => (
