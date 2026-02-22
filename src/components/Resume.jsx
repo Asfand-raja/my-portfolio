@@ -47,7 +47,7 @@ function Resume() {
       <div className="right-column">
         <h2 className="mb-3">Raja Asfand Arif Khan</h2>
         <h5 className="text-muted mb-4">
-          Web Developer | Graphic Designer | Video Editor
+          Web Developer | Graphic Designer | UI/UX Designer
         </h5>
 
         <h4 className="section-title">Profile Summary</h4>
@@ -80,9 +80,29 @@ function Resume() {
             >
               K-Travel Website
             </a>
+
+
+
+            <a
+              href="https://users-d.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              , Todo Web App
+            </a>
+
+
+            <a
+              href="/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              , Portfolio Website
+            </a>
           </li>
           <li>Edited videos for farewell events and YouTube channels</li>
           <li>Completed four-week internship in Web Development at Pentium</li>
+          <li>Completed four-week Canva FellowShip Program</li>
         </ul>
 
         <div className="container text-center mt-4">

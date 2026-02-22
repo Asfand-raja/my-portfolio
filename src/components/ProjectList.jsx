@@ -73,8 +73,6 @@ function ProjectList({ title, projects }) {
                                     ) : (
                                         <a
                                             href={project.link}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
                                             className="btn btn-gradient"
                                             onClick={(e) => handleButtonClick(e, project)}
                                         >

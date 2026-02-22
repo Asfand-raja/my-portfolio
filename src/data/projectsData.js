@@ -6,6 +6,7 @@ import WebbAppImg from "../components/Web App.png";
 import Mockups from "../components/Figma mockups.png";
 import SwordImg from "../components/Sword.jpg";
 import PillarsImg from "../components/Pillars.png";
+import CoffeeImg from "../components/cofee.png";
 
 export const projects = [
     // 🌐 Web Development
@@ -25,12 +26,11 @@ export const projects = [
         isPortfolio: true,
     },
     {
-        title: "Web App Landing Page",
-        text: "Developed an elegant restaurant landing page with smooth animations, menus, and responsive sections.",
+        title: "Todo App",
+        text: "A fully functional Todo application built with React, featuring task management, persistence, and a clean user interface.",
         img: WebbAppImg,
-        link: "#",
+        link: "https://users-d.netlify.app/",
         category: "Web Development",
-        isNotDeployed: true,
     },
 
     // 🎨 Graphic Design
@@ -56,6 +56,13 @@ export const projects = [
         img: Mockups,
         link: "/ElderCare/index.html",
         category: "UI Design", // Changed from Graphic Design to UI Design
+    },
+    {
+        title: "Coffee Shop UI Mockup",
+        text: "Designed a warm and inviting Coffee Shop UI mockup, featuring smooth navigation for menus, orders, and user authentication.",
+        img: CoffeeImg,
+        link: "/Cofee shop/index.html",
+        category: "UI Design",
     },
 
     //  Blender (Treating as pseudo-Graphic Design for now, or kept as Blender and we render both on GD page)

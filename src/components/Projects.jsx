@@ -10,6 +10,7 @@ import WebbAppImg from "./Web App.png";
 import Mockups from "./Figma mockups.png";
 import SwordImg from "./Sword.jpg"; // sword thumbnail
 import PillarsImg from "./Pillars.png"; // pillars thumbnail
+import CoffeeImg from "./cofee.png";
 
 function Projects() {
   const [alertMessage, setAlertMessage] = useState(null);
@@ -33,12 +34,11 @@ function Projects() {
       isPortfolio: true,
     },
     {
-      title: "Web App Landing Page",
-      text: "Developed an elegant restaurant landing page with smooth animations, menus, and responsive sections.",
+      title: "Todo App",
+      text: "A fully functional Todo application built with React, featuring task management, persistence, and a clean user interface.",
       img: WebbAppImg,
-      link: "#",
+      link: "https://users-d.netlify.app/",
       category: "Web Development",
-      isNotDeployed: true,
     },
 
     // 🎨 Graphic Design
@@ -61,6 +61,13 @@ function Projects() {
       text: "Designed impactful figma mockups for an Eldercare App emphasizing and covering all real world most needed facilities to help both Volunteers and Caregivers.",
       img: Mockups,
       link: "/ElderCare/index.html",
+      category: "Graphic Design",
+    },
+    {
+      title: "Coffee Shop UI Mockup",
+      text: "Designed a warm and inviting Coffee Shop UI mockup, featuring smooth navigation for menus, orders, and user authentication.",
+      img: CoffeeImg,
+      link: "/Cofee shop/index.html",
       category: "Graphic Design",
     },
 
@@ -159,8 +166,6 @@ function Projects() {
                         ) : (
                           <a
                             href={project.link}
-                            target="_blank"
-                            rel="noopener noreferrer"
                             className="btn btn-gradient"
                             onClick={(e) => handleButtonClick(e, project)}
                           >

@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ElderCare Mockups</title>
+  <link rel="icon" href="/logo192.jpeg" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     body {
@@ -71,6 +72,26 @@
       /* Emerald Green hover border */
     }
 
+    .back-arrow {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      color: #a855f7;
+      text-decoration: none;
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.3s ease;
+      font-weight: 600;
+      z-index: 10;
+    }
+
+    .back-arrow:hover {
+      color: #10b981;
+      transform: translateX(-5px);
+    }
+
     @media (max-width: 600px) {
       .pdf-list {
         grid-template-columns: 1fr;
@@ -78,13 +99,26 @@
 
       h1 {
         font-size: 2rem;
-        margin-top: 30px;
+        margin-top: 70px;
+      }
+
+      .back-arrow {
+        top: 15px;
+        left: 15px;
+        font-size: 1rem;
       }
     }
   </style>
 </head>
 
 <body>
+  <a href="/projects/ui-design" class="back-arrow">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+      stroke-linecap="round" stroke-linejoin="round">
+      <line x1="19" y1="12" x2="5" y2="12"></line>
+      <polyline points="12 19 5 12 12 5"></polyline>
+    </svg>
+  </a>
   <h1>ElderCare Mockups</h1>
   <div class="pdf-list">
     <a href="/ElderCare/Caregiver_Matches.pdf" target="_blank">Caregiver Matches</a>
