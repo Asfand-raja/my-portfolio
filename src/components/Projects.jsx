@@ -11,6 +11,7 @@ import Mockups from "./Figma mockups.png";
 import SwordImg from "./Sword.jpg"; // sword thumbnail
 import PillarsImg from "./Pillars.png"; // pillars thumbnail
 import CoffeeImg from "./cofee.png";
+import ZynloftImg from "./Zynloft.png";
 
 function Projects() {
   const [alertMessage, setAlertMessage] = useState(null);
@@ -38,6 +39,13 @@ function Projects() {
       text: "A fully functional Todo application built with React, featuring task management, persistence, and a clean user interface.",
       img: WebbAppImg,
       link: "https://users-d.netlify.app/",
+      category: "Web Development",
+    },
+    {
+      title: "Zynloft Solutions",
+      text: "A sleek, enterprise-grade agency website built to showcase digital solutions — featuring a cinematic dark theme, animated hero section, and a professional services layout.",
+      img: ZynloftImg,
+      link: "https://zynloft-solutions.netlify.app/",
       category: "Web Development",
     },
 
