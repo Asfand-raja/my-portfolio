@@ -12,6 +12,7 @@ import Resume from "./components/Resume";
 import WebDevelopment from "./components/WebDevelopment";
 import GraphicDesign from "./components/GraphicDesign";
 import UIDesign from "./components/UIDesign";
+import Certificates from "./components/Certificates";
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
           <Route path="/projects/web-dev" element={<WebDevelopment />} />
           <Route path="/projects/graphic-design" element={<GraphicDesign />} />
           <Route path="/projects/ui-design" element={<UIDesign />} />
+          <Route path="/certificates" element={<Certificates />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>

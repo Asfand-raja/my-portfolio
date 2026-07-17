@@ -135,6 +135,15 @@ function Contact() {
             <i className="fas fa-envelope"></i>
           </a>
 
+          <a
+            href="https://github.com/asfand-raja"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="github"
+          >
+            <i className="fab fa-github"></i>
+          </a>
+
         </div>
       </div>
     </section>
