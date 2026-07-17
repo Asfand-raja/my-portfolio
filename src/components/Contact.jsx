@@ -136,7 +136,7 @@ function Contact() {
           </a>
 
           <a
-            href="https://github.com/asfand-raja"
+            href="https://github.com/Asfand-raja"
             target="_blank"
             rel="noopener noreferrer"
             className="github"
