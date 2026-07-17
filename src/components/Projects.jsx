@@ -4,7 +4,6 @@ import "./Projects.css";
 // 🖼 Import local images
 import KTravelImg from "./K-travel.png";
 import MockupThumbnail from "./mockup.png";
-import PortfolioPic from "./Portfolio.png";
 import MonetizationPoster from "./Society.png";
 import WebbAppImg from "./Web App.png";
 import Mockups from "./Figma mockups.png";
@@ -12,6 +11,7 @@ import SwordImg from "./Sword.jpg"; // sword thumbnail
 import PillarsImg from "./Pillars.png"; // pillars thumbnail
 import CoffeeImg from "./cofee.png";
 import ZynloftImg from "./Zynloft.png";
+import FajrPortfolioImg from "./FajrPortfolio.png";
 
 function Projects() {
   const [alertMessage, setAlertMessage] = useState(null);
@@ -27,12 +27,11 @@ function Projects() {
       category: "Web Development",
     },
     {
-      title: "Portfolio Website",
-      text: "A modern, responsive personal portfolio built using React and Bootstrap to showcase my work and achievements.",
-      img: PortfolioPic,
-      link: "#",
+      title: "Fajr Gillani Portfolio",
+      text: "A premium, animated portfolio website built for client Syeda Fajr Gillani — a creative designer & financial analyst. Features GSAP animations, smooth scroll, and an elegant dark editorial theme.",
+      img: FajrPortfolioImg,
+      link: "https://fajr-portfolio.netlify.app/",
       category: "Web Development",
-      isPortfolio: true,
     },
     {
       title: "Todo App",
