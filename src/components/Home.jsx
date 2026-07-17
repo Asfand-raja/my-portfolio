@@ -54,6 +54,9 @@ function Home() {
             </li>
           </ul>
         </div>
+        <NavLink to="/certificates">
+          <button className="btn-certificates">Certificates</button>
+        </NavLink>
         <NavLink to="/contact">
           <button className="btn-contact">Contact</button>
         </NavLink>

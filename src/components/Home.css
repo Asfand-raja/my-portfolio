@@ -79,6 +79,16 @@
   background: var(--emerald-hover);
 }
 
+.btn-certificates {
+  background: #a855f7;
+  /* Purple matching the certificates theme */
+}
+
+.btn-certificates:hover {
+  background: #9333ea;
+  /* Darker purple on hover */
+}
+
 .btn-contact {
   background: #581c87;
   /* Dark Purple */
