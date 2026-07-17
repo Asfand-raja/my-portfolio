@@ -1,6 +1,7 @@
 import KTravelImg from "../components/K-travel.png";
 import MockupThumbnail from "../components/mockup.png";
-import PortfolioPic from "../components/Portfolio.png";
+import FajrPortfolioImg from "../components/FajrPortfolio.png";
+import ZynloftImg from "../components/Zynloft.png";
 import MonetizationPoster from "../components/Society.png";
 import WebbAppImg from "../components/Web App.png";
 import Mockups from "../components/Figma mockups.png";
@@ -34,12 +35,18 @@ export const projects = [
         category: "Web Development",
     },
     {
-        title: "Portfolio Website",
-        text: "A modern, responsive personal portfolio built using React and Bootstrap to showcase my work and achievements.",
-        img: PortfolioPic,
-        link: "#",
+        title: "Fajr Gillani Portfolio",
+        text: "A premium, animated portfolio website built for client Syeda Fajr Gillani — a creative designer & financial analyst. Features GSAP animations, smooth scroll, and an elegant dark editorial theme.",
+        img: FajrPortfolioImg,
+        link: "https://fajr-portfolio.netlify.app/",
         category: "Web Development",
-        isPortfolio: true,
+    },
+    {
+        title: "Zynloft Solutions",
+        text: "A sleek, enterprise-grade agency website built to showcase digital solutions — featuring a cinematic dark theme, animated hero section, and a professional services layout.",
+        img: ZynloftImg,
+        link: "https://zynloft-solutions.netlify.app/",
+        category: "Web Development",
     },
     {
         title: "Todo App",
