@@ -2,6 +2,7 @@ import KTravelImg from "../components/K-travel.png";
 import MockupThumbnail from "../components/mockup.png";
 import FajrPortfolioImg from "../components/FajrPortfolio.png";
 import ZynloftImg from "../components/Zynloft.png";
+import VelouraImg from "../components/veloura.png";
 import MonetizationPoster from "../components/Society.png";
 import WebbAppImg from "../components/Web App.png";
 import Mockups from "../components/Figma mockups.png";
@@ -27,6 +28,13 @@ import StageBanner from "../assets/graphics/stage banner.png";
 
 export const projects = [
     // 🌐 Web Development
+    {
+        title: "Veloura E-Commerce",
+        text: "A luxury e-commerce platform for curated fine jewelry and Scandinavian home décor — featuring dynamic slideshows, interactive product catalog, shopping bag, wishlist, and responsive editorial layout.",
+        img: VelouraImg,
+        link: "https://veloura-app.netlify.app/",
+        category: "Web Development",
+    },
     {
         title: "K-Travel Website",
         text: "A responsive travel website built with HTML, CSS, and JavaScript showcasing tour destinations.",

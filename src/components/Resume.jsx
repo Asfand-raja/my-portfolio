@@ -74,30 +74,35 @@ function Resume() {
           <li>
             Developed{" "}
             <a
+              href="https://veloura-app.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Veloura E-Commerce
+            </a>
+            ,{" "}
+            <a
               href="https://asfand-raja.github.io/K-travel/index.html"
               target="_blank"
               rel="noopener noreferrer"
             >
               K-Travel Website
             </a>
-
-
-
+            ,{" "}
             <a
               href="https://users-d.netlify.app/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              , Todo Web App
+              Todo Web App
             </a>
-
-
+            ,{" "}
             <a
               href="/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              , Portfolio Website
+              Portfolio Website
             </a>
           </li>
           <li>Edited videos for farewell events and YouTube channels</li>

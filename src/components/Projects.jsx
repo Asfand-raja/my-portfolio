@@ -12,6 +12,7 @@ import PillarsImg from "./Pillars.png"; // pillars thumbnail
 import CoffeeImg from "./cofee.png";
 import ZynloftImg from "./Zynloft.png";
 import FajrPortfolioImg from "./FajrPortfolio.png";
+import VelouraImg from "./veloura.png";
 
 function Projects() {
   const [alertMessage, setAlertMessage] = useState(null);
@@ -19,6 +20,13 @@ function Projects() {
 
   const projects = [
     // 🌐 Web Development
+    {
+      title: "Veloura E-Commerce",
+      text: "A luxury e-commerce platform for curated fine jewelry and Scandinavian home décor — featuring dynamic slideshows, interactive product catalog, shopping bag, wishlist, and responsive editorial layout.",
+      img: VelouraImg,
+      link: "https://veloura-app.netlify.app/",
+      category: "Web Development",
+    },
     {
       title: "K-Travel Website",
       text: "A responsive travel website built with HTML, CSS, and JavaScript showcasing tour destinations.",
@@ -174,6 +182,8 @@ function Projects() {
                           <a
                             href={project.link}
                             className="btn btn-gradient"
+                            target={project.link && project.link.startsWith("http") ? "_blank" : undefined}
+                            rel={project.link && project.link.startsWith("http") ? "noopener noreferrer" : undefined}
                             onClick={(e) => handleButtonClick(e, project)}
                           >
                             View Project

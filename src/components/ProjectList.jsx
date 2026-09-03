@@ -74,6 +74,8 @@ function ProjectList({ title, projects }) {
                                         <a
                                             href={project.link}
                                             className="btn btn-gradient"
+                                            target={project.link && project.link.startsWith("http") ? "_blank" : undefined}
+                                            rel={project.link && project.link.startsWith("http") ? "noopener noreferrer" : undefined}
                                             onClick={(e) => handleButtonClick(e, project)}
                                         >
                                             View Project
